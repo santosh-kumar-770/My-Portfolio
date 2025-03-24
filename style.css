@@ -172,7 +172,6 @@ nav ul li a:hover {
 }
 
 /* About section */
-
 .about {
     display: flex;
     justify-content: space-around;
@@ -329,8 +328,6 @@ nav ul li a:hover {
     box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
 }
 
-
-
 /* Footer */
 footer {
     background-color: #343131;
@@ -369,8 +366,6 @@ footer {
     transform: scale(1.1);
 }
 
-
-
 /* Added responsiveness */
 @media (max-width: 768px) {
     nav {
@@ -391,6 +386,98 @@ footer {
 
     .myself h3 {
         font-size: 30px;
+    }
+
+    .photo img {
+        height: 300px;
+        margin-bottom: 50px;
+        margin-top: -50px;
+    }
+
+    .decorated-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        margin-left: 0;
+        margin-right: 0;
+        height: 200px;
+    }
+
+    .info {
+        margin: 0;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 20px 2%;
+    }
+
+    header {
+        padding: 0 2%;
+    }
+
+    section {
+        padding: 50px 2%;
+    }
+
+    .myself h2 {
+        font-size: 30px;
+    }
+
+    .myself h3 {
+        font-size: 20px;
+    }
+
+    .photo img {
+        height: 200px;
+        margin-bottom: 30px;
+        margin-top: -30px;
+    }
+
+    .decorated-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        margin-left: 0;
+        margin-right: 0;
+        height: 150px;
+    }
+
+    .info {
+        margin: 0;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0.5rem;
     }
 }
 
