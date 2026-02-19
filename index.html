@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <!-- Custom cursor elements -->
+    <div id="cursor"></div>
+    <canvas id="trailCanvas"></canvas>
+
     <div class="background-squares">
         <div></div>
         <div></div>
@@ -67,40 +71,87 @@
         </section>
     </section>
     <section id="work">
-        <h2 style="color: #ccd6f6; margin-bottom: 20px;">Some Things I've Built</h2>
+        <h2 style="color: #ccd6f6; margin-bottom: 20px;">My Skills</h2>
         <div class="projects">
             <div class="project-card">
-                <h3>Project One</h3>
-                <p>Built some famous songs from the movie lionking. I built it with my basic knowledge.</p>
-                <a href="https://santosh-kumar-770.github.io/lionking/" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="icons8-instagram-250.png" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
             <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Built an Ice-Cream Menu Card just in one page.</p>
-                <a href="https://santosh-kumar-770.github.io/Ice-Cream-Menu-card/" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="icons8-python-500.png" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
             <div class="project-card">
-                <h3>Project Three</h3>
-                <p>I have built a Travel webpage using some HTML and CSS.</p>
-                <a href="https://santosh-kumar-770.github.io/Travel-Web/" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="icons8-html-500.png" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
             <div class="project-card">
-                <h3>Project Four</h3>
-                <p>I made a login page using animations.</p>
-                <a href="https://santosh-kumar-770.github.io/Login-page/" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="icons8-css-480.png" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
             <div class="project-card">
-                <h3>Project Five</h3>
-                <p>A social media dashboard that aggregates data from multiple platforms and presents it in an intuitive
-                    interface.<br>(This is just for show there is nothin in this card.)</p>
-                <a href="" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="icons8-javascript-500.png" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
             <div class="project-card">
-                <h3>Project Six</h3>
-                <p>A social media dashboard that aggregates data from multiple platforms and presents it in an intuitive
-                    interface.<br>(This is just for show there is nothin in this card.)</p>
-                <a href="" class="cta-button1">Check This!</a>
+                <h3>Instagram creator</h3>
+                <p>I create content on Instagram mostly about my daily life and tech.</p>
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <img src="" alt="" height="20px">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 60%"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+                <a href="https://www.instagram.com/santosh.techs/" class="cta-button1">Click me</a>
             </div>
+
         </div>
     </section>
     <section id="contact">
@@ -123,11 +174,30 @@
         </div>
     </section>
 
+    <!-- Connect Section -->
+    <section class="connect-section">
+        <a href="#" class="connect-link" id="connectLink">Where you want to connect with me?</a>
+        
+        <!-- Connection Modal with Spread Options -->
+        <div class="connect-modal" id="connectModal">
+            <a href="https://www.instagram.com/santosh_kumar_770?igsh=MWExaWswZjVwdHY1eQ==" target="_blank" class="connect-option instagram" id="instaOption">
+                <span>📷 Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/santosh-kumar-484125316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="connect-option linkedin" id="linkedinOption">
+                <span>💼 LinkedIn</span>
+            </a>
+            <a href="mailto:santoshkumaritte7@gmail.com" class="connect-option gmail" id="gmailOption">
+                <span>📧 Gmail</span>
+            </a>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Santosh Kumar. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
